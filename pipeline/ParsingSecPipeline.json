@@ -1,0 +1,7 @@
+{
+	"name": "ParsingSecPipeline",
+	"properties": {
+		"description": "Used to collect and parse fillings",
+		"annotations": []
+	}
+}
