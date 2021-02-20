@@ -1,0 +1,11 @@
+{
+	"name": "TradingSystemKeyValut",
+	"properties": {
+		"description": "Link to Azure key vault",
+		"annotations": [],
+		"type": "AzureKeyVault",
+		"typeProperties": {
+			"baseUrl": "https://chavez-key-vault.vault.azure.net/"
+		}
+	}
+}
