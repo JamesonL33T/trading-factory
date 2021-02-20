@@ -1,0 +1,20 @@
+{
+	"name": "TradingSystemSqlDatabase",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"description": "SQL used for pulling from the pipeline",
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"connectionString": "Integrated Security=False;Encrypt=True;Connection Timeout=30;Data Source=jameson-db01.database.windows.net;Initial Catalog=azure-sec-database;User ID=jameson",
+			"password": {
+				"type": "AzureKeyVaultSecret",
+				"store": {
+					"referenceName": "TradingSystemKeyValut",
+					"type": "LinkedServiceReference"
+				},
+				"secretName": "jamesondb01"
+			}
+		}
+	}
+}
